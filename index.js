@@ -43,6 +43,10 @@ let posts=[
         content:"chill brother we are in hackathon #scet",
     }
 ];
+// connt get fix here 
+app.get("/", (req, res) => {
+  res.redirect("/posts"); // ya res.send() bhi chalega if testing
+});
 
 // making post routes
 app.get("/posts",((req,res)=>{
