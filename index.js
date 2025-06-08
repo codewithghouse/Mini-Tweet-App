@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-let port= 3000;
+let port = process.env.PORT || 3000;
 const path = require("path");
 var methodOverride = require('method-override'); // for overrdide the mothods like patch and delete
 const { v4: uuidv4 } = require('uuid'); // for uid genereting
@@ -43,10 +43,10 @@ let posts=[
         content:"chill brother we are in hackathon #scet",
     }
 ];
-// connt get fix here 
-app.get("/", (req, res) => {
-  res.redirect("/posts"); // ya res.send() bhi chalega if testing
-});
+// // connt get fix here 
+// app.get("/", (req, res) => {
+//   res.redirect("/posts"); // ya res.send() bhi chalega if testing
+// });
 
 // making post routes
 app.get("/posts",((req,res)=>{
