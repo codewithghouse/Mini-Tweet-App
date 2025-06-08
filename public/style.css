@@ -1,0 +1,127 @@
+body{
+    background-color: #131D4F;
+}
+#logo{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    color: white;
+}
+.postdiv{
+    height: 100vh;
+    width: 100%;
+    background-color: #648DB3;
+    margin-top: 20px;
+    text-align: center;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+}
+.tweet-name{
+    margin-top: 10px;
+    font-family: "Noto Sans Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #B2D8CE;
+
+}
+/* followers div */
+.followers-div{
+    height: 280px;
+    width: 500px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; */
+    
+    
+
+}
+.followers-div h2{
+    color: #131D4F;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: start;
+  margin: 10px;
+}
+.followers-div p{
+    color: black;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: start;
+  margin: 5px;
+}
+.content-div{
+height: 120px;
+width: 90%;
+margin: 10px;
+ border-radius: 10px;
+  background-color: white;
+}
+.btnedit{
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  margin: 10px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border: none;
+}
+.btndel{
+   height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  margin: 10px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border: none;
+
+}
+.seepost{
+   height: 30px;
+  width: 90px;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  margin: 10px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border: none;
+
+}
+/* create post btn */
+.createpost{
+  height: 30px;
+  width: 150px;
+  background-color: rgb(10, 73, 121);
+  border-radius: 10px;
+  border: none;
+ 
+}
+.createpost a{
+  text-decoration: none;
+  color: white;
+}
+.postdiv .seepost a{
+  text-decoration: none;
+}
+.btnedit a{
+  text-decoration: none;
+}

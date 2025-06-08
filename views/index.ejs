@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twitter blog</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Bungee+Tint&family=Carrois+Gothic+SC&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Liter&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Special+Gothic&family=Winky+Rough:ital,wght@0,300..900;1,300..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<!-- font awesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1 id="logo" >Mini Twitter App</h1>
+    <button class="createpost" ><a href="/posts/new">Create new post</a></button>
+    <main>
+        <h1 class="tweet-name"> <i class="fa-solid fa-house"></i> &nbsp;Here Are The Tweet Post That You Might Like &nbsp;</h1>
+        <div class="postdiv">
+                 <% for( post of posts){ %>
+                    <div class="followers-div">
+                        <h2> <i class="fa-solid fa-user"></i><%= post.username %></h2>
+                  <div class="content-div">
+                     <p> <%= post.content  %></p>
+                  </div>
+                  <button type="submit" class="seepost"> <a href="/posts/<%= post.id%>">See in Detail</a></button>
+                  <button type="submit" class="btnedit"><a href="/posts/<%= post.id %>/edit">Edit</a></button>
+                  <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
+                    <button type="submit" class="btndel">Delete</button>
+                  </form>
+                </div>
+             <% } %>
+        </div>
+    </main>
+</body>
+</html>

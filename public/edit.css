@@ -1,0 +1,67 @@
+.usercreatediv {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 150, 0.2);
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    border: 1px solid #00ff95;
+}
+
+.usercreatediv h1 {
+    text-align: center;
+    color: #00ff95;
+    font-family: monospace;
+    margin-bottom: 25px;
+    text-shadow: 0 0 8px #00ff95;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+textarea {
+    background-color: #121212;
+    color: #00ff95;
+    border: 1px solid #00ff95;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    resize: none;
+    transition: all 0.3s ease;
+}
+
+input[readonly] {
+    background-color: #1a1a1a;
+    color: #00ff95;
+    border: 1px solid transparent;
+    font-weight: bold;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00ff95;
+}
+
+button {
+    padding: 12px;
+    background-color: #00ff95;
+    color: #0d0d0d;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #00cc77;
+    box-shadow: 0 0 12px #00ff95;
+}
