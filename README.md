@@ -2,7 +2,7 @@
 
 A simple and clean Twitter-like CRUD app built with Node.js, Express.js, and EJS – **without any database**.  
 All tweets are stored in-memory using JavaScript arrays. Perfect for learning and demo projects!
-[click this link to see the posts](https://mini-tweet-app-1.onrender.com)
+[Mini-Tweeter-APP](https://mini-tweet-app-1.onrender.com)
 
 
 ---
