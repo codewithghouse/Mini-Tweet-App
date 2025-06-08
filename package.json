@@ -5,5 +5,24 @@
     "method-override": "^3.0.0",
     "nodemon": "^3.1.10",
     "uuid": "^11.1.0"
-  }
+  },
+  "name": "mini-twitter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codewithghouse/Mini-Tweet-App.git"
+  },
+  "keywords": [],
+  "author": "ghouse pasha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codewithghouse/Mini-Tweet-App/issues"
+  },
+  "homepage": "https://github.com/codewithghouse/Mini-Tweet-App#readme",
+  "description": ""
 }
