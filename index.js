@@ -47,6 +47,9 @@ let posts=[
 // app.get("/", (req, res) => {
 //   res.redirect("/posts"); // ya res.send() bhi chalega if testing
 // });
+app.get("/", (req, res) => {
+  res.redirect("/posts");
+});
 
 // making post routes
 app.get("/posts",((req,res)=>{
